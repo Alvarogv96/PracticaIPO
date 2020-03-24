@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">PracticaIPO</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="app_name">AtreveTea</string>
+    <string name="Rutinas">RUTINAS</string>
+    <string name="Emociones">EMOCIONES</string>
+    <string name="Casa">CASA</string>
+    <string name="Escuela">ESCUELA</string>
+    <string name="Vestirse">VESTIRSE</string>
+    <string name="Salir">SALIR DE CASA</string>
+    <string name="Pregunta1">¿Qué hacemos primero?</string>
+
 </resources>
