@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".SecondScreen"
     android:background="@color/Background">
 
     <include
@@ -12,59 +12,62 @@
         layout="@layout/toolbar" />
 
     <ImageButton
-        android:id="@+id/imageButtonCasa"
+        android:id="@+id/imageButtonEmociones"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="172dp"
         android:layout_height="169dp"
         android:background="@color/Background"
         android:scaleType="centerInside"
-        android:src="@mipmap/casa"
+        android:src="@mipmap/sonreir"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.411" />
 
     <ImageButton
-        android:id="@+id/imageButtonEscuela"
+        android:id="@+id/imageButtonRutinas"
         android:layout_width="172dp"
         android:layout_height="169dp"
         android:background="@color/Background"
         android:scaleType="fitStart"
-        android:src="@mipmap/escuela"
+        android:src="@mipmap/comer"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
 
     <TextView
-        android:layout_width="131dp"
-        android:layout_height="72dp"
-        android:text="CASA"
+        android:layout_width="289dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="24dp"
+        android:text="EMOCIONES"
+        android:textColor="@color/text"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.298"
-        android:textColor="@color/text"/>
+        app:layout_constraintVertical_bias="0.296" />
 
     <TextView
-        android:layout_width="219dp"
-        android:layout_height="66dp"
-        android:text="ESCUELA"
+        android:layout_width="204dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="20dp"
+        android:text="RUTINAS"
+        android:textColor="@color/text"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:layout_constraintVertical_bias="0.341"
-        android:textColor="@color/text"/>
+        app:layout_constraintVertical_bias="0.136" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
