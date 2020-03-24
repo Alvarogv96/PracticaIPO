@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btn1, btn2 ;
+    ImageButton btn1 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
