@@ -18,7 +18,7 @@ public class ActividadScreen extends AppCompatActivity{
 
     public void correcto(View v) {
 
-        Toast toast = Toast.makeText(getApplicationContext(), "¡¡¡CORRECTO!!!", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), "¡¡¡MUY BIEN!!!", Toast.LENGTH_SHORT);
         toast.show();
 
         new Handler().postDelayed(new Runnable(){
@@ -27,13 +27,13 @@ public class ActividadScreen extends AppCompatActivity{
                Intent i = new Intent(ActividadScreen.this, RoutineLevels.class);
                startActivity(i);
             }
-        }, 5000);
+        }, 3000);
     }
 
 
     public void erroneo(View v){
 
-        Toast toast = Toast.makeText(getApplicationContext(), "PRUEBA DE NUEVO...", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(), "PRUEBA DE NUEVO", Toast.LENGTH_SHORT);
         toast.show();
     }
 
