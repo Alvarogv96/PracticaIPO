@@ -17,6 +17,11 @@
             tools:ignore="LockedOrientationActivity"/>
 
         <activity
+            android:name=".ActividadScreen"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
             android:name=".SecondScreen"
             android:label=" "
             android:screenOrientation="landscape"
