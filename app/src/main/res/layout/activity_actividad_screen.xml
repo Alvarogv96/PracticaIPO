@@ -70,12 +70,12 @@
 
 
     <TextView
-        android:layout_width="96dp"
-        android:layout_height="27dp"
-        android:text="@string/Vestirse"
-        android:textColor="@color/text"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,12 +83,11 @@
         app:layout_constraintVertical_bias="0.252" />
 
     <TextView
-        android:layout_width="140dp"
-        android:layout_height="43dp"
-        android:text="@string/Salir"
-        android:textColor="@color/text"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"

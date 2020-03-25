@@ -11,12 +11,39 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rojo"
+        android:onClick="nivelRojo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView"
         android:layout_width="110dp"
         android:layout_height="45dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:text="ROJO"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:autoText="false"
         android:gravity="center"
         android:text="MORADO"
         android:textColor="@color/text"
@@ -24,20 +51,6 @@
         app:autoSizeTextType="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="110dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:gravity="center"
-        android:text="AMARILLO"
-        android:textColor="@color/text"
-        android:textSize="22sp"
-        app:autoSizeTextType="none"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <TextView
         android:id="@+id/textView5"
@@ -53,42 +66,57 @@
         android:textSize="24sp"
         app:autoSizeTextType="none"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView7"
         android:layout_width="110dp"
         android:layout_height="45dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
+        android:autoText="false"
         android:gravity="center"
-        android:text="VERDE"
+        android:text="AMARILLO"
         android:textColor="@color/text"
-        android:textSize="24sp"
+        android:textSize="22sp"
         app:autoSizeTextType="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <Button
+        android:id="@+id/button6"
         android:layout_width="110dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
+        android:autoText="false"
         android:gravity="center"
         android:text="VERDE"
         android:textColor="@color/text"
         android:textSize="24sp"
         app:autoSizeTextType="none"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:background="@drawable/azul"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
@@ -96,6 +124,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
+        android:autoText="false"
         android:gravity="center"
         android:text="AZUL"
         android:textColor="@color/text"
@@ -110,7 +139,7 @@
         android:layout_height="110dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="17dp"
         android:background="@drawable/rojo"
         android:onClick="nivelRojo"
         app:layout_constraintStart_toStartOf="parent"
@@ -131,37 +160,11 @@
         android:id="@+id/button2"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:background="@drawable/verdeoscuro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:background="@drawable/morado"
+        android:background="@drawable/verdeoscuro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        android:background="@drawable/azul"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -170,25 +173,60 @@
         android:layout_height="110dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
-        android:background="@drawable/rosa"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:background="@drawable/azul"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="VERDE"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="110dp"
         android:layout_height="45dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
+        android:autoText="false"
         android:gravity="center"
-        android:text="ROJO"
+        android:text="VERDE"
         android:textColor="@color/text"
         android:textSize="24sp"
         app:autoSizeTextType="none"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
