@@ -4,17 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoutineLevels"><![CDATA[
-    android:background="@color/Background">
-
-
-
-
-
-
-
-
-    ]]>
+    tools:context=".RoutineLevels">
 
     <TextView
         android:id="@+id/textView6"
@@ -132,7 +122,7 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="17dp"
         android:background="@drawable/rojo"
-        android:onClick="NivelRojo"
+        android:onClick="nivelRojo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

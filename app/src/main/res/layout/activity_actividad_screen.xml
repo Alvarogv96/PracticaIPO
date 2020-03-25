@@ -28,10 +28,11 @@
         android:id="@+id/textView"
         android:layout_width="262dp"
         android:layout_height="31dp"
+        android:layout_marginBottom="52dp"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        tools:layout_editor_absoluteY="253dp"
         tools:text="@string/Pregunta1" />
 
     <ImageButton
@@ -40,6 +41,7 @@
         android:layout_width="112dp"
         android:layout_height="113dp"
         android:background="@color/Background"
+        android:onClick="correcto"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +57,7 @@
         android:layout_width="112dp"
         android:layout_height="113dp"
         android:background="@color/Background"
+        android:onClick="erroneo"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"

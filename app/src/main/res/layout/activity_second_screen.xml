@@ -16,58 +16,52 @@
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="172dp"
         android:layout_height="169dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="28dp"
         android:background="@color/Background"
         android:scaleType="centerInside"
         android:src="@mipmap/sonreir"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.411" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <ImageButton
         android:id="@+id/imageButtonRutinas"
-        android:layout_width="172dp"
-        android:layout_height="169dp"
+        android:layout_width="187dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="80dp"
         android:background="@color/Background"
+        android:onClick="nivelesRutina"
         android:scaleType="fitStart"
         android:src="@mipmap/comer"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.765"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
-        android:layout_width="289dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="24dp"
+        android:id="@+id/textView8"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="36dp"
         android:text="EMOCIONES"
         android:textColor="@color/text"
-        android:textSize="50dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.296" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:layout_width="204dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="182dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="36dp"
         android:text="RUTINAS"
         android:textColor="@color/text"
-        android:textSize="50dp"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

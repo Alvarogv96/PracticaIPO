@@ -3,10 +3,11 @@ package com.example.practicaipo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class SecondScreen extends AppCompatActivity implements View.OnClickListener{
+public class SecondScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +18,9 @@ public class SecondScreen extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
     }
 
-    @Override
-    public void onClick(View v) {
-
+    public void nivelesRutina(View v){
+        Intent actividad = new Intent(this,RoutineLevels.class);
+        startActivity(actividad);
     }
+
 }
