@@ -10,21 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".ActividadScreen"
+            android:label=" "
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             tools:ignore="LockedOrientationActivity"/>
         <activity
             android:name=".RoutineLevels"
+            android:label=" "
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             tools:ignore="LockedOrientationActivity"/>
 
-        <activity
-            android:name=".ActividadScreen"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            tools:ignore="LockedOrientationActivity"/>
+
         <activity
             android:name=".SecondScreen"
             android:label=" "

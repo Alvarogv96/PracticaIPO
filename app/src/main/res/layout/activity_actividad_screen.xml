@@ -25,15 +25,16 @@
         app:srcCompat="@android:drawable/editbox_background" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="262dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="52dp"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        tools:text="@string/Pregunta1" />
+        android:layout_width="319dp"
+        android:layout_height="37dp"
+        android:text="@string/Pregunta1"
+        android:textColor="@color/text"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageButton
         android:id="@+id/Vestirse"
@@ -48,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.213"
+        app:layout_constraintVertical_bias="0.215"
         app:srcCompat="@mipmap/vestir" />
 
     <ImageButton
@@ -67,30 +68,31 @@
         app:layout_constraintVertical_bias="0.213"
         app:srcCompat="@mipmap/salir" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="88dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="24dp"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.186"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        tools:text="@string/Vestirse" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:layout_width="96dp"
+        android:layout_height="27dp"
+        android:text="@string/Vestirse"
+        android:textColor="@color/text"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Vestirse"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="43dp"
+        android:text="@string/Salir"
+        android:textColor="@color/text"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Salir"
-        app:layout_constraintVertical_bias="0.342"
-        tools:text="@string/Salir" />
+        app:layout_constraintVertical_bias="0.272" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
