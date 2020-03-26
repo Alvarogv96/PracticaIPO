@@ -7,6 +7,16 @@
     tools:context=".ActividadScreen"
     android:background="@color/Background">
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/Background"
+        android:onClick="atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/back" />
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
@@ -37,7 +47,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageButton
-        android:id="@+id/Vestirse"
+        android:id="@+id/img_actividad1"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="112dp"
         android:layout_height="113dp"
@@ -53,7 +63,7 @@
         app:srcCompat="@mipmap/vestir" />
 
     <ImageButton
-        android:id="@+id/Salir"
+        android:id="@+id/img_actividad2"
         style="@style/Widget.AppCompat.ImageButton"
         android:layout_width="112dp"
         android:layout_height="113dp"
@@ -81,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Vestirse"
+        app:layout_constraintTop_toBottomOf="@+id/img_actividad1"
         app:layout_constraintVertical_bias="0.252" />
 
     <TextView
@@ -95,7 +105,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Salir"
+        app:layout_constraintTop_toBottomOf="@+id/img_actividad2"
         app:layout_constraintVertical_bias="0.272" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/lupa"
+        android:onClick="ampliar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
