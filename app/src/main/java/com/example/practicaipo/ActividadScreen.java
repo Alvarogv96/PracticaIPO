@@ -14,10 +14,10 @@ import android.widget.Toast;
 
 public class ActividadScreen extends AppCompatActivity{
 
-    ImageView img1 = findViewById(R.id.img_actividad1);
-    ImageView img2 = findViewById(R.id.img_actividad2);
-    Bitmap bitmap1 = ((BitmapDrawable)img1.getDrawable()).getBitmap();
-    Bitmap bitmap2 = ((BitmapDrawable)img2.getDrawable()).getBitmap();
+    private ImageView img1;
+    private ImageView img2;
+    private Bitmap bitmap1;
+    private Bitmap bitmap2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,11 @@ public class ActividadScreen extends AppCompatActivity{
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        img1 = findViewById(R.id.img_actividad1);
+        img2 = findViewById(R.id.img_actividad2);
+        bitmap1 = ((BitmapDrawable)img1.getDrawable()).getBitmap();
+        bitmap2 = ((BitmapDrawable)img2.getDrawable()).getBitmap();
 
     }
 
