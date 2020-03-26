@@ -59,8 +59,8 @@ public class ActividadScreen extends AppCompatActivity{
 
 
         Intent intent = new Intent(this, Lupa.class);
-        intent.putExtra("bitmap1", bitmap1);
-        intent.putExtra("bitmap2", bitmap2);
+       /* intent.putExtra("bitmap1", bitmap1);
+        intent.putExtra("bitmap2", bitmap2);*/
 
         startActivity(intent);
     }
