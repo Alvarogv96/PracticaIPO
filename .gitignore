@@ -17,3 +17,5 @@
 app/build.gradle
 
 *.gradle
+
+app/src/main/res/layout/activity_routine_levels.xml
