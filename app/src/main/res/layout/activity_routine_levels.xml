@@ -4,12 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoutineLevels"
     android:background="@color/Background"
-    >
+    tools:context=".RoutineLevels">
+
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rojo"
+        android:onClick="nivelRojo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
@@ -26,12 +38,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/morado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
     <TextView
         android:id="@+id/textView7"
         android:layout_width="110dp"
         android:layout_height="45dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:autoText="false"
         android:gravity="center"
         android:text="AMARILLO"
@@ -41,12 +64,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="110dp"
-        android:layout_height="45dp"
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
         android:autoText="false"
@@ -57,7 +81,18 @@
         app:autoSizeTextType="none"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -65,8 +100,8 @@
         android:layout_height="45dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
         android:autoText="false"
         android:gravity="center"
         android:text="VERDE"
@@ -97,10 +132,10 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="110dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginLeft="116dp"
+        android:layout_width="87dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
         android:autoText="false"
         android:gravity="center"
         android:text="AZUL"
@@ -111,33 +146,10 @@
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/rojo"
-        android:onClick="nivelRojo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/amarillo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
         android:id="@+id/button2"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="17dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         android:background="@drawable/verdeoscuro"
